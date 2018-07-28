@@ -28,9 +28,8 @@
                 <p class="promo-copy-text">
                     Delicious recipes to help you make the most of the freshest Australian ingredients, including in-season winter citrus fruits.
                           </p>
-                <a href="#" target="_blank">
-                    <button type="button" class="cta-primary ">Get Recipes</button>
-                </a>
+                
+                    <button id="chef"  class="cta-primary">Our Magazine</button>
 
             </div>
         </div>
@@ -56,6 +55,7 @@
         </div>
 
     </div>
+    <div id="foolListdiv" class="container collapse"></div>
 </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
                     <div class="card-body">
                         <h5 class="card-title" >Ice Cream</h5>
                         <p class="card-text">Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It is usually made from dairy products, such as milk and cream, and often combined with fruits or other ingredients and flavors</p>
-                        <button class="btn btn-primary" data-name='iceCream' onclick="new getReciepes().getCalories(this.getAttribute('data-name'))">See Calories</a>
+                        <button class="cta-primary" data-name='iceCream' onclick="getReciepe.getCalories(this.getAttribute('data-name'))">See Calories</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Roast Pumpkin</h5>
                         <p class="card-text">Bake for 40-45 minutes or until golden. Meanwhile, in a small bowl whisk oil, lemon juice and mustard until combined and season to taste. In a large bowl toss the warm lentils, pumpkin.</p>
-                        <button  class="btn btn-primary"  data-name='roasPumkin' onclick="new getReciepes().getCalories(this.getAttribute('data-name'))">See Calories</a>
+                        <button  class="cta-primary"  data-name='roasPumkin' onclick="getReciepe.getCalories(this.getAttribute('data-name'))">See Calories</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Spaghetti</h5>
                         <p class="card-text">Spaghetti is a long, thin, solid, cylindrical pasta. Spaghettoni is a thicker form of spaghetti, while capellini is a very thin spaghetti. It is a staple food of traditional Italian cuisine.</p>
-                        <button class="btn btn-primary" data-name='spaghetti' onclick="new getReciepes().getCalories(this.getAttribute('data-name'))">See Calories</a>
+                        <button class="cta-primary" data-name='spaghetti' onclick="getReciepe.getCalories(this.getAttribute('data-name'))">See Calories</a>
                     </div>
                 </div>
             </div>
@@ -119,8 +119,16 @@
 
 
   </main>
+  <script src="index.min.js"  ></script>
   <script src="index.js"></script>
 
+<script>
+
+window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
+};
+</script>
 
 </body>
 
