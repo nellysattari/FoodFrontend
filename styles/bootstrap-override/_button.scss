@@ -1,9 +1,25 @@
+
+ @mixin button-size($padding-y, $padding-x,$font-size, $line-height, $border-radius,$margin-y, $margin-x) {
+    padding: $padding-y $padding-x;
+    margin: $margin-y, $margin-x;
+    font-size: $font-size;
+    line-height: $line-height;
+    // Manually declare to provide an override to the browser default
+    @if $enable-rounded {
+      border-radius: $border-radius;
+    } @else {
+      border-radius: 0;
+    }
+  }
+  
+
+
 // Extended
 .cta-primary {
     @extend .btn;
     text-transform: uppercase;
     @include button-size($btn-padding-y, $btn-padding-x, $font-size-base * 1.4, $btn-line-height, $btn-border-radius, $btn-margin-y, $btn-margin-x);
-    @include button-variant($light-blue, $light-blue, $white);  
+    // @include button-variant($light-blue, $light-blue, $white);  
     color: $white;
     
    @include hover {
