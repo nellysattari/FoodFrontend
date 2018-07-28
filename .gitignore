@@ -1,4 +1,4 @@
 node_modules
 *.mov
-originalimages/*.*
-images/*.*
+originalimages
+err
