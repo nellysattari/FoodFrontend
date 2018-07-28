@@ -1,0 +1,20 @@
+{
+  "name": "food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass styles/main.scss main.css",
+    "start": "browser-sync --start --server -w"
+  },
+  "author": "nelly",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}
