@@ -4,7 +4,6 @@ export function showMagazine() {
         { "name": "What Chef suggests this week", "image": 12, "description": "Amazing Food" },
 
     ];
-
     var foodList = '';
     foodCalories.forEach((element, index) => {
         foodList += '<div class="card mb-12">';

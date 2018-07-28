@@ -58,7 +58,8 @@ gulp.task(`serve`, function () {
             browser: browserChoice,
             server: {
                 baseDir: [
-                    `.`,
+                     `.`,
+                    // 'dist',
                     `images`,
                     `Scripts`,
                     `Styles`

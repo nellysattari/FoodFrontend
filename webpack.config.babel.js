@@ -4,9 +4,9 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
  
 module.exports = (env) => {
     return  {
-        entry: './scripts/getlist.js',
+        entry: './scripts/app.js',
         output: {
-            path: path.resolve(__dirname, 'scripts'),
+            path: `${path.resolve(__dirname)}/scripts`,
             filename: 'index.min.js',
         },
         devtool: 'source-map',

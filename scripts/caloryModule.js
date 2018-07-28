@@ -6,7 +6,7 @@ const foodCalories = [
 ];
   
   
-class getReciepes {
+export class Calories {
     
     getCalories (name){
         let val ;
@@ -22,7 +22,7 @@ class getReciepes {
  
 };
 
-let getReciepe = new getReciepes();
+// let getReciepe = new getReciepes();
  
  
    

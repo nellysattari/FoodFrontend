@@ -1,9 +1,8 @@
-import showMagazine from './showMagazine';
-function refresh() {
+import {showMagazine} from './showMagazine';
 
-    document.getElementById("chef").addEventListener('click', function () {
-        console.log("chef");
-        showMagazine.showMagazine();
+function show() {
+     document.getElementById("chef").addEventListener('click', function () {
+        showMagazine();
     });
 
 };
