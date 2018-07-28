@@ -19,7 +19,7 @@
     @extend .btn;
     text-transform: uppercase;
     @include button-size($btn-padding-y, $btn-padding-x, $font-size-base * 1.4, $btn-line-height, $btn-border-radius, $btn-margin-y, $btn-margin-x);
-    // @include button-variant($light-blue, $light-blue, $white);  
+    @include button-variant($light-blue, $light-blue, $white);  
     color: $white;
     
    @include hover {

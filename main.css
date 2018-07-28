@@ -3826,7 +3826,8 @@ h4, .h4 {
 
 h5, .h5 {
   line-height: 0.75;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 16px 0; }
 
 h1, .h1 {
   font-size: 7.2rem; }
@@ -3886,7 +3887,28 @@ h6, .h6 {
   font-size: 1.4rem;
   line-height: 1.5;
   border-radius: 0.25rem;
+  color: #fff;
+  background-color: #00629B;
+  border-color: #00629B;
   color: #FFFFFF; }
+  .cta-primary:hover {
+    color: #212529;
+    background-color: #FFFFFF;
+    border-color: #004268; }
+  .cta-primary:focus, .cta-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 98, 155, 0.5); }
+  .cta-primary.disabled, .cta-primary:disabled {
+    color: #fff;
+    background-color: #00629B;
+    border-color: #00629B; }
+  .cta-primary:not(:disabled):not(.disabled):active, .cta-primary:not(:disabled):not(.disabled).active,
+  .show > .cta-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #004268;
+    border-color: #003a5b; }
+    .cta-primary:not(:disabled):not(.disabled):active:focus, .cta-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .cta-primary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 98, 155, 0.5); }
   .cta-primary:hover {
     color: #7CADCA; }
   .cta-primary.disabled, .cta-primary:disabled {

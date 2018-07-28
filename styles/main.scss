@@ -1,27 +1,19 @@
+// original bootstrap
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/utilities";
-//////////////////////////////</utilities>
 @import "../node_modules/bootstrap/scss/buttons";
-// challenger variables in Foundation
-
-
-// original bootstrap
-// Optional
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
 
+///// vendor
+@import "vendor/index"; //Google fonts  
 
-// ///// vendor
-@import "vendor/index"; //It imports the Google fonts so needs to be rendered as priority
-
-// ///// bootstrap overrride components in Foundation layer
-
-@import 'bootstrap-override/index';
-
+///// Site Theming
+@import 'theming/index';
 @import 'components/index';
