@@ -16,7 +16,6 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "gulp": "^3.9.1",
-    
     "node-sass": "^4.9.2",
     "babel-loader": "^7.1.4",
     "ts-loader": "^4.3.0",
