@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
- 
+import UglifyJSPlugin from 'uglifyjs-webpack-plugin';
+
 module.exports = (env) => {
     return  {
         entry: './scripts/app.js',
@@ -22,7 +23,12 @@ module.exports = (env) => {
                       }
                 }
             ]
-        }
+        },
+        plugins: [
+            new UglifyJSPlugin({
+                sourceMap: true
+            })
+        ]
 
     }
    
