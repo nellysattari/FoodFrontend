@@ -1,0 +1,19 @@
+@mixin theme($themeName, $textColor) {
+    .#{$themeName} {
+        &.component.full-width-promotion {
+              p {
+                color: $textColor;
+            }
+            @include media-breakpoint-down(sm) {
+                p {
+                    color: $textColor !important;
+                }
+            }  
+        }
+    }
+}
+@include theme(promotion-light-theme, $white);
+@include theme(promotion-dark-theme, $gray-900);
+ 
+
+ 
