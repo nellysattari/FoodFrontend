@@ -22,7 +22,10 @@ export class Calories {
  
 };
 
-// let getReciepe = new getReciepes();
- 
+let getCalories = new Calories();
+      
+document.getElementById("iceCream").addEventListener('click', function () {
+    getCalories.getCalories(this.getAttribute('data-name'));
+});
  
    

@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import path from 'path';
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
  
 module.exports = (env) => {
     return  {
@@ -14,14 +13,11 @@ module.exports = (env) => {
             rules: [
                 {
                     test: /\.js$/, exclude: /node_modules/, loader: "babel-loader", query: { presets: ['es2015'], },
-                },
-                {
-                    test: /\.ts$/, exclude: /node_modules/, loader: "ts-loader"
-                },
-
+                }
             ]
         }
 
     }
    
 };
+

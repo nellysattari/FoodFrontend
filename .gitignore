@@ -1,4 +1,5 @@
 node_modules
-*.mov
-originalimages
-err
+
+git
+.vscode
+security*.txt
