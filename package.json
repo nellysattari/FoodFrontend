@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass styles/main.scss styles/main.css",
-    "start": "browser-sync --start --server -w",
-    "eslint": "eslint -c .eslintrc.json scripts/**/*.js  --ignore-pattern scripts/**/index.min.js",
-    "transpile": "babel scripts/app.js  --out-file app.js",
     "serve": "gulp --gulpfile gulpfile.js serve",
-    "bundlewatch": "webpack  --config webpack.config.babel.js --mode=development  --watch ",
+    "sass": "node-sass styles/main.scss styles/main.css",
+    "eslint": "eslint -c .eslintrc.json scripts/**/*.js  --ignore-pattern scripts/**/index.min.js",
     "bundle": "webpack  --config webpack.config.babel.js --mode=development",
-    "css": "gulp --gulpfile gulpfile.js compileSass"
+    "transpile": "babel scripts/app.js  --out-file app.js",
+    "sass-gulp": "gulp --gulpfile gulpfile.js compileSass"
   },
   "author": "nelly",
   "license": "ISC",
