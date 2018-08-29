@@ -1,4 +1,11 @@
 # Fancy becoming a frontend developer?
+This static sample site is written by Html, Javascript ES6 and Sass. 
+It shows you the list of foods and by clicking bottons underneath each, you will see a javascript runs and gives you the calory. 
+Also by clicking on Banner on the top of the page, you will connect to the API that Yammly website exposed to get their recipes which Axios library will handle all Http requests and responses. 
+Bootstrap version 4 is used to style the site based on SASS technology. 
+To bundle the javascript modules, Webpack is used.
+The package manager is NPM and task runner is combination of NPM and Gulp. 
+
 ## Run the code
 By looking at package.josn, you will see some scripts on the top and you can execute them as below. 
 To restore packages in your folder, run:
