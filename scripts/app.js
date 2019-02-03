@@ -3,15 +3,23 @@ import {showMagazine} from './magazineModule';
 import {getRecepies} from './yamlyRecepiesModule';
 
 import Vue from "vue";
-import App from "./App.vue";
+import {app} from 'tool-vue-lib';
 import router from "./router";
+
 Vue.config.productionTip = false;
 
-
 new Vue({
-  render: h => h(App),
-  router
-}).$mount("#appTool");
+    el:'#appTool',
+    template:'<AppComponent/>',
+    components: {app},
+    router : router
+  });
+
+  
+// new Vue({
+//   render: h => h(app),
+//   router
+// }).$mount("#appTool");
 
 
 function setup() {

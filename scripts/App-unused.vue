@@ -1,6 +1,7 @@
 <template>
   <div id="appTool">
-     <router-view name="title" />
+    <TitleComponent msg='title'></TitleComponent>
+    <router-view name="title" />
     <router-view name="steps" />
     <router-view name="main" />
     <!-- <img alt=" logo" src="./assets/.jpg" /> -->
