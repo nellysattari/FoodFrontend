@@ -2,6 +2,18 @@ import {Calories} from './caloryModule';
 import {showMagazine} from './magazineModule';
 import {getRecepies} from './yamlyRecepiesModule';
 
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+Vue.config.productionTip = false;
+
+
+new Vue({
+  render: h => h(App),
+  router
+}).$mount("#appTool");
+
+
 function setup() {
     let getCalories = new Calories();
 

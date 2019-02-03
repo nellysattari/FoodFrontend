@@ -35,3 +35,13 @@ https://babeljs.io/repl
   
 
    
+## In order to use vue components we need these libraries 
+"babel-preset-vue-app" ,
+"vue-loader" ,
+"vue-template-compiler",
+"vue"
+
+## Troubleshooting: 
+If you got some errors regarding node sass or pyton while you run "npm i", you need to remove "node-sass" from package.json and install it in command line as "npm i --save-dev node-sass" then you are able to re-run "npm i"
+
+   
