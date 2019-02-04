@@ -4,6 +4,7 @@ import {getRecepies} from './yamlyRecepiesModule';
 
 import Vue from "vue";
 import {app} from 'tool-vue-lib';
+// import {router} from 'tool-vue-lib';
 import router from "./router";
 
 Vue.config.productionTip = false;

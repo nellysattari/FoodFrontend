@@ -12,6 +12,15 @@ const router = new VueRouter({
     {
       path: "/",
       components: {
+         title: TitleComponent
+     },
+      props: {
+        title: () => ({ msg: "life time  tool" }) 
+      }
+    },
+    {
+      path: "/step1",
+      components: {
         title: TitleComponent,
         steps: StepComponent,
         main: Ques1Component
