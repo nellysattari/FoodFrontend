@@ -4,6 +4,10 @@ import {TitleComponent} from  'tool-vue-lib';
 import {StepComponent} from  'tool-vue-lib';
 import {Ques1Component} from  'tool-vue-lib';
 import {Ques2Component} from  'tool-vue-lib';
+import {ResultComponent} from  'tool-vue-lib';
+import store from "./store";
+// https://reqres.in/api/users?page=2
+//http://dummy.restapiexample.com/
 
 Vue.use(VueRouter);
 
@@ -12,10 +16,10 @@ const router = new VueRouter({
     {
       path: "/",
       components: {
-         title: TitleComponent
-     },
+        title: TitleComponent
+      },
       props: {
-        title: () => ({ msg: "life time  tool" }) 
+        title: () => ({ msg: "life time  tool" })
       }
     },
     {
@@ -30,19 +34,10 @@ const router = new VueRouter({
         steps: () => ({
           stepNumber: "Step 1",
           stepTitle: "Tell us a little about yourself"
-        }),
-        main: () => ({
-          questions: [
-            {
-              title:
-                "How important is/will be the government Age Pension to your standard of living in retiremen?"
-            },
-            {
-              title:
-                "Do you have a partner, or any children or family that you feel responsible to provide for or would like to leave an inheritance to"
-            }
-          ]
         })
+        // main: () => ({
+        //   questions: store.getters.questions
+        // })
       }
     },
     {
@@ -51,7 +46,11 @@ const router = new VueRouter({
         title: TitleComponent,
         steps: StepComponent,
         main: Ques2Component
+        // result: ResultComponent
       },
+      children: [
+        { path: '', component: ResultComponent }
+      ],
       props: {
         title: () => ({ msg: "life time tool" }),
         steps: () => ({
@@ -59,14 +58,7 @@ const router = new VueRouter({
           stepTitle: "Payment illustrator"
         }),
         main: () => ({
-          questions: [
-            {
-              title: "Gender"
-            },
-            {
-              title: "Age (Not DOB)"
-            }
-          ]
+          questions: store.getters.questions
         })
       }
     }

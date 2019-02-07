@@ -6,14 +6,16 @@ import Vue from "vue";
 import {app} from 'tool-vue-lib';
 // import {router} from 'tool-vue-lib';
 import router from "./router";
+import store from "./store";
 
 Vue.config.productionTip = false;
 
 new Vue({
     el:'#appTool',
-    template:'<AppComponent/>',
+    // template:'<app-component/>',
     components: {app},
-    router : router
+    router : router,
+    store: store
   });
 
   
